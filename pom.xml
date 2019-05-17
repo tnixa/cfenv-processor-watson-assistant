@@ -29,11 +29,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.ibm.watson.developer_cloud</groupId>
-			<artifactId>watson-spring-boot-starter</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
 			<groupId>io.pivotal.cfenv</groupId>
 			<artifactId>java-cfenv-boot</artifactId>
 			<version>1.0.0.RELEASE</version>
@@ -45,11 +40,5 @@
 		</dependency>		
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>ibm-cloud</id>
-			<url>https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo</url>
-		</repository>
-    </repositories>
 
 </project>

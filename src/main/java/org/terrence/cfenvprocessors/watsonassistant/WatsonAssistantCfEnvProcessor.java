@@ -1,4 +1,4 @@
-package org.terrence.testapp.envprocessor;
+package org.terrence.cfenvprocessors.watsonassistant;
 
 import java.util.Map;
 
@@ -28,8 +28,8 @@ public class WatsonAssistantCfEnvProcessor implements CfEnvProcessor {
     @Override
     public void process(CfCredentials cfCredentials, Map<String, Object> properties) {
         // set watsonVersion to date of the released watson spring boot starter
-        // version 0.3.0 was released on 2018-06-22
-        String watsonVersion = "2018-06-22";
+        // version 0.3.0 was released on 2019-05-07
+        String watsonVersion = "2018-05-07";
         properties.put("watson.assistant.url", cfCredentials.getUri("http"));
         properties.put("watson.assistant.iam-api-key", cfCredentials.getString("apikey"));
         properties.put("watson.assistant.versionDate", watsonVersion);
